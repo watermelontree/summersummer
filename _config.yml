@@ -1,0 +1,3 @@
+baseurl: /summersummer
+markdown: rdiscount
+pygments: true
