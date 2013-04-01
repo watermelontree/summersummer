@@ -1,3 +1,50 @@
+body {
+	font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
+}
+
+/* Index */
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
+
+.section {
+	color: #ffffff;
+	padding: 20px 200px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.section h1 {
+	font-size: 45px;
+	text-shadow: 0px 1px 2px #ffffff;
+	margin: 0;
+}
+
+.section-one {
+	min-height: 400px;
+	background-color: #FF6666;
+}
+
+.section-tow {
+	height: 200px;
+	padding-left: 300px;
+	padding-right: 300px;
+	color: #7F8C8D;
+}
+
+.section-three {
+	min-height: 400px;
+	background-color: #2ECC71;
+}
+
+.section-four {
+	min-height: 300px;
+	background-color: #E7ECF0;
+	color: #34495E;
+}
+
 .footer {
 	text-align: center;
 	padding: 30px 0;
