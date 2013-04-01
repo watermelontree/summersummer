@@ -25,8 +25,13 @@
 .section-tow {
 	padding-left: 300px;
 	padding-right: 300px;
+	color: #7F8C8D;
 }
 
-.sction-three {
+.section-three {
 	background-color: #2ECC71;
+}
+
+.section-four {
+	background-color: #E7ECF0;
 }
