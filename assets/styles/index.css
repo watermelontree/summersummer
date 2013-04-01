@@ -8,6 +8,8 @@
 	min-height: 400px;
 	color: #ffffff;
 	padding: 20px 200px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .section h1 {
@@ -18,4 +20,13 @@
 
 .section-one {
 	background-color: #FF6666;
+}
+
+.section-tow {
+	padding-left: 300px;
+	padding-right: 300px;
+}
+
+.sction-three {
+	background-color: #2ECC71;
 }
