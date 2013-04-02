@@ -53,7 +53,9 @@ body {
 	color: #7F8C8D;
 }
 
-
+#header .top-bar {
+	background-color: #FF6666;
+}
 
 #footer {
 	text-align: center;
@@ -64,3 +66,16 @@ body {
 }
 
 /* POST */
+.post-list li {
+	list-style: none;
+	padding: 10px 20px;
+	min-height: 160px;
+	border: 1px solid #eeeeee;
+	box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.15);
+	margin-bottom: 50px;
+}
+
+.post-date {
+	color: #eeeeee;
+	font-size: 13px;
+}
