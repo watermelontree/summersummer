@@ -25,19 +25,19 @@ body {
 }
 
 .section-one {
-	min-height: 400px;
+	min-height: 500px;
 	background-color: #FF6666;
 }
 
 .section-two {
-	min-height: 400px;
-	background-color: #2ECC71;
+	min-height: 150px;
+	background-color: #E7ECF0;
+	color: #34495E;
 }
 
 .section-three {
-	min-height: 400px;
-	background-color: #E7ECF0;
-	color: #34495E;
+	min-height: 300px;
+	background-color: #2ECC71;
 }
 
 .desc {
