@@ -56,7 +56,6 @@ body {
 #header.top-bar,
 #header.top-bar a {
 	background-color: #FF6666;
-	color: #2BA6CB;
 }
 
 .logo {
@@ -65,10 +64,10 @@ body {
 	margin-left: 10px;
 }
 
-/*.circle {
+.circle {
 	border-radius: 400px;
 }
-*/
+
 #footer {
 	text-align: center;
 	padding: 30px 0;
@@ -90,6 +89,7 @@ body {
 
 /* About */
 #about {
+	display: none;
 	background-color: #2ECC71;
 	margin-left: 0;
 	margin-right: 0;
@@ -97,9 +97,10 @@ body {
 }
 
 #avatar {
-	position: relative;
-	top: 49%;
-	left: 49%;
+	position: absolute;
+	top: 48%;
+	left: 48%;
 	width: 100px;
 	height: 100px;
+	cursor: pointer;
 }
