@@ -9,17 +9,23 @@
 	</head>
 	<body>
 		<nav id="header" class="top-bar">
+			<ul class="title-area">
+				<li>
+					<h1 class="name">
+						<a href="/">
+							<img class="logo circle" src="{{ site.baseurl }}/assets/img/watermelontree.jpg" alt="SummerSummer"/>
+						</a>
+					</h1>
+				</li>
+			</ul>
 			<section class="top-bar-section">
 				<ul class="right">
-					<li class="divider"></li>
 					<li>
 						<a href="#">Post</a>
 					</li>
-					<li class="divider"></li>
 					<li>
 						<a href="#">Photo</a>
 					</li>
-					<li class="divider"></li>
 					<li>
 						<a href="#">About</a>
 					</li>
@@ -28,7 +34,7 @@
 		</nav>
 		<div class="row">
 			<div class="large-8 large-centered columns">
-				<h1>{{ page.title }}</h1>
+				<h1 class="subheader">{{ page.title }}</h1>
 				{{ content }}
 			</div>
 		</div>
