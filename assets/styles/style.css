@@ -25,18 +25,18 @@ body {
 }
 
 .section-one {
-	min-height: 500px;
+	min-height: 600px;
 	background-color: #FF6666;
 }
 
 .section-two {
-	min-height: 150px;
+	min-height: 220px;
 	background-color: #E7ECF0;
 	color: #34495E;
 }
 
 .section-three {
-	min-height: 300px;
+	min-height: 150px;
 	background-color: #2ECC71;
 }
 
