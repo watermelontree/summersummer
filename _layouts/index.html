@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" >
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
 		<title>{{ page.title }}</title>
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/normalize.css">
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/style.css">
+		<script src="{{ site.baseurl }}/assets/js/jquery-1.9.1.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/index.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
 			<div class="section section-one">
-				<h1>Build with a Mixin</h1>
-				<p>We've included SCSS mixins used to style panels so that you can code smarter.</p>
+				<a href="/post">
+					<h1>Build with a Mixin</h1>
+					<p>We've included SCSS mixins used to style panels so that you can code smarter.</p>
+					<div class="desc">
+						Side nav, like you'll see on Foundation's main site, is useful for sections of either a site or a page.
+					</div>
+				</a>
+			</div>
+			<div class="section section-below">
+				You can build your panel using our global mixin by including it on your own custom class or ID. The mixin contains all the necessary styles and they can be customized a bit within the mixin. The rest of the important styles are controlled by variables. The code looks like this:
 			</div>
 			<div class="section section-tow">
+				about
+				<div class="desc">
+					There are two ways to build a side nav in Foundation 4: either with our predefined HTML classes or our mixins. Building side nav using our predefined classes is simple, you'll just need to write
+				</div>
+			</div>
+			<div class="section section-below">
 				You can build your panel using our global mixin by including it on your own custom class or ID. The mixin contains all the necessary styles and they can be customized a bit within the mixin. The rest of the important styles are controlled by variables. The code looks like this:
 			</div>
 			<div class="section section-three">
-				
-			</div>
-			<div class="section section-four">
+				<h2>Photography</h2>
 				You also have two options available to customize the panel within the mixin. These control the background color (which also effect border and font color) and the interior padding of the panel itself.
+				<div class="desc">
+					For these styles to come across, make sure you have the default Foundation CSS package or that you've selected side nav from a custom package. These should be linked up
+				</div>
 			</div>
 		</div>
 	</body>
