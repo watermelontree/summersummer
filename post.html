@@ -9,9 +9,9 @@ title: Blog-SummerSummer
 			<h3>
 				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
 				</a>
-				<div class="right post-date">
+				<small class="right subheader">
 					{{ post.date | date_to_string }}
-				</div>
+				</small>
 			</h3>
 			{{ post.content | truncate: 100 }}
 		</li>

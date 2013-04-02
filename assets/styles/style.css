@@ -53,8 +53,17 @@ body {
 	color: #7F8C8D;
 }
 
-#header.top-bar {
+#header.top-bar,
+#header.top-bar a {
 	background-color: #FF6666;
+}
+
+.logo {
+	background: url('../img/watermelontree.jpg') no-repeat 0 0;
+}
+
+.circle {
+	border-radius: 400px;
 }
 
 #footer {
@@ -75,7 +84,7 @@ body {
 	margin-bottom: 50px;
 }
 
-.post-date {
+/*.post-date {
 	color: #eeeeee;
 	font-size: 13px;
-}
+}*/
