@@ -56,23 +56,19 @@ body {
 #header.top-bar,
 #header.top-bar a {
 	background-color: #FF6666;
-}
-
-.name {
-	text-indent: -9999px;
-	margin: 0;
-	font-size: 1.5em;
+	color: #2BA6CB;
 }
 
 .logo {
 	width: 35px;
 	height: 40px;
+	margin-left: 10px;
 }
 
-.circle {
+/*.circle {
 	border-radius: 400px;
 }
-
+*/
 #footer {
 	text-align: center;
 	padding: 30px 0;
@@ -91,7 +87,19 @@ body {
 	margin-bottom: 50px;
 }
 
-/*.post-date {
-	color: #eeeeee;
-	font-size: 13px;
-}*/
+
+/* About */
+#about {
+	background-color: #2ECC71;
+	margin-left: 0;
+	margin-right: 0;
+	height: 100%;
+}
+
+#avatar {
+	position: relative;
+	top: 49%;
+	left: 49%;
+	width: 100px;
+	height: 100px;
+}
