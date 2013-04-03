@@ -1,19 +1,40 @@
 ---
-layout: post-index
+layout: default
 title: Blog-SummerSummer
 ---
 
-<ul class="post-list">
-	{% for post in site.posts %}		
-		<li>
-			<h4>
-				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
-				</a>
-				<small class="right subheader">
-					{{ post.date | date_to_string }}
-				</small>
-			</h4>
-			{{ post.content | truncate: 100 }}
-		</li>
-	{% endfor %}
-</ul>
+{% include header.html %}
+
+<div class="row">
+	<div class="large-8 large-centered columns">
+		
+		<ul class="post-list">
+			{% for post in site.posts %}		
+				<li>
+					<h4>
+						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+						</a>
+						<small class="right subheader">
+							{{ post.date | date_to_string }}
+						</small>
+					</h4>
+					{{ post.content | truncate: 100 }}
+				</li>
+			{% endfor %}
+		</ul>
+
+		<div class="pagination">
+			{% if paginator.previous_page %}	
+			<a href="{{ paginator.previous_page }}" class="previous">Previous</a>
+			{% else %}
+			<span class="previous">Previous</span>	
+			{% endif %}
+			<span class="page_num">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+			{% if paginator.next %}
+			<a href="{{ paginator.next_page }}" class="next">Next</a>
+			{% else %}
+			<span class="next">Next</span>
+			{% endif %}
+		</div>
+	</div>
+</div>
