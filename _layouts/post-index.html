@@ -9,34 +9,23 @@
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/style.css">
 	</head>
 	<body>
-		<nav id="header" class="top-bar">
-			<ul class="title-area">
-				<li>
-					<h1 class="name">
-						<a href="{{ site.baseurl }}">
-							<img class="logo circle" src="{{ site.baseurl }}/assets/img/watermelontree.jpg" alt="SummerSummer"/>
-						</a>
-					</h1>
-				</li>
-			</ul>
-			<section class="top-bar-section">
-				<ul class="right">
-					<li>
-						<a href="#">Post</a>
-					</li>
-					<li>
-						<a href="#">Photo</a>
-					</li>
-					<li>
-						<a href="#">About</a>
-					</li>
-				</ul>
-			</section>
-		</nav>	
-
+		{% include header.html %}
 		<div class="row">
 			<div class="large-8 large-centered columns">
 				{{ content }}
+				<div class="pagination">
+					{% if paginator.previous_page %}	
+					<a href="{{ paginator.previous_page }}" class="previous">Previous</a>
+					{% else %}
+					<span class="previous">Previous</span>	
+					{% endif %}
+					<span class="page_num">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+					{% if paginator.next %}
+					<a href="{{ paginator.next_page }}" class="next">Next</a>
+					{% else %}
+					<span class="next">Next</span>
+					{% endif %}
+				</div>
 			</div>
 		</div>
 	</body>
