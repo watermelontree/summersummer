@@ -11,7 +11,7 @@ body {
 
 .section {
 	color: #ffffff;
-	padding: 20px 200px;
+	padding: 50px 200px;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
@@ -27,18 +27,20 @@ body {
 .section-one {
 	min-height: 600px;
 	background-color: #FF6666;
+	padding-top: 100px;
 }
 
 .section-two {
-	min-height: 350px;
+	min-height: 300px;
 	background-color: #E7ECF0;
 	color: #34495E;
 }
 
 .section-three {
-	min-height: 150px;
+	min-height: 250px;
 	background-color: #2ECC71;
 }
+
 
 .desc {
 	position: absolute;
@@ -48,9 +50,11 @@ body {
 
 .section-below {
 	height: 200px;
-	padding-left: 300px;
-	padding-right: 300px;
 	color: #7F8C8D;
+}
+
+#header {
+	height: 50px;
 }
 
 #header.top-bar,
@@ -65,7 +69,7 @@ body {
 }
 
 .circle {
-	border-radius: 400px;
+	border-radius: 500px;
 }
 
 #footer {
@@ -81,11 +85,23 @@ body {
 	list-style: none;
 	padding: 10px 20px;
 	min-height: 160px;
-	border: 1px solid #eeeeee;
-	box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.15);
+	/*border: 1px solid #eeeeee;
+	box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.15);*/
 	margin-bottom: 50px;
+	/*border-bottom: 1px solid #eeeeee;*/
 }
 
+.date-list {
+	background-color: rgba(84, 243, 77, 0.8);
+	height: 110px;
+	color: #ffffff;
+	padding-top: 20px;
+}
+
+.post-section {
+	border-bottom: 1px solid #E7ECF0;
+	min-height: 150px;
+}
 
 /* About */
 #about {

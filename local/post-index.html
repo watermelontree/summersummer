@@ -1,0 +1,72 @@
+<!Doctype>
+<html>
+	<head>
+		<link rel="stylesheet" href="../assets/styles/normalize.css">
+		<link rel="stylesheet" href="../assets/styles/foundation.min.css">
+		<link rel="stylesheet" href="../assets/styles/style.css">
+		<script src="../assets/js/jquery-1.9.1.min.js"></script>
+	</head>
+	<body>
+		<nav id="header" class="top-bar">
+			<ul class="title-area">
+				<li>
+					<h1 class="name">
+						<a href="{{ site.baseurl }}">
+							<img class="logo circle" src="{{ site.baseurl }}/assets/img/watermelontree.jpg" alt="SummerSummer"/>
+						</a>
+					</h1>
+				</li>
+			</ul>
+			<section class="top-bar-section">
+				<ul class="right">
+					<li>
+						<a href="#">Post</a>
+					</li>
+					<li>
+						<a href="#">Photo</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+				</ul>
+			</section>
+		</nav>
+		<div class="row">
+			<ul class="post-list large-8 large-centered columns">	
+				<li class="row">
+					<div class="small-2 columns circle date-list">
+						<ul>
+							<div>
+								April
+							</div>
+							<div>
+								4
+							</div>
+						</ul>
+					</div>
+					<div class="small-9 columns post-section">
+						<h4>
+							<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+							</a>
+						</h4>
+						content	
+					</div>
+				</li>
+
+				<!-- <div class="pagination">
+					{% if paginator.previous_page %}	
+					<a href="{{ paginator.previous_page }}" class="previous">Previous</a>
+					{% else %}
+					<span class="previous">Previous</span>	
+					{% endif %}
+					<span class="page_num">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+					{% if paginator.next %}
+					<a href="{{ paginator.next_page }}" class="next">Next</a>
+					{% else %}
+					<span class="next">Next</span>
+					{% endif %}
+				</div> -->
+			</ul>
+		</div>
+	</body>
+</html>
