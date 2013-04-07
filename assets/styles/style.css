@@ -95,9 +95,10 @@ body {
 
 .date-list {
 	background-color: rgba(84, 243, 77, 0.8);
-	height: 110px;
+	height: 85px;
+	width: 85px;
 	color: #ffffff;
-	padding-top: 20px;
+	padding-top: 15px;
 }
 
 .post-section {

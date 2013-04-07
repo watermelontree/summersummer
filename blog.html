@@ -4,28 +4,33 @@ title: Blog-SummerSummer
 ---
 
 {% include header.html %}
+{% capture this_postdate %}{{ post.date | date_to_string }}{% endcapture %}
+{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+{% capture this_month %}{{ post.date | date: "%b" }}{% endcapture %}
+{% capture this_day %}{{ post.date | date: "%d" }}{% endcapture %}
 
 <div class="row">
 	<ul class="post-list large-8 large-centered columns">
   {% for post in site.posts %}  
     <li class="row">
-      <div class="small-2 columns circle date-list">
-      <dl>
-        <dt>{{ post.date | date_to_string }}</dt>
-        <dd></dd>
-      </dl>
+      <div class="small-2 columns circle">
+        <time class="date-list" datetime="{{ this_postdate }}">
+          <div>{{ this_day }}</div>
+          <div>{{ this_month }}</div> 
+        </time>
       </div>
-      <div class="small-9 columns post-section">
-        <h4>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+      <div class="small-10 columns post-section">
+        <a>
+          <h href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
           </a>
-        </h4>
+        </h2>
+        truncate
         {{ post.content | truncate: 300 }}
       </div>
     </li>
   {% endfor %}
 	</ul>
-  
+
 	<!-- <div class="pagination large-8 large-centered columns">
 	{% if paginator.previous_page %}  
 	<a href="{{ paginator.previous_page }}" class="previous">Previous</a>
