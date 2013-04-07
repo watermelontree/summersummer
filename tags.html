@@ -10,6 +10,6 @@ title: tags
     {% for post in tag[1] %}
     <a href="{{ post.url }}">{{ post.title }}</a>
     <span>{{ post.date | date_to_string }}</span>
-    {% endif %}
-  {% endif %}
+    {% endfor %}
+  {% endfor %}
 </div>

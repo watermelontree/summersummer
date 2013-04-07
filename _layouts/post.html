@@ -4,5 +4,17 @@ layout: default
 
 {% include header.html %}
 
-
+<div class="row">
+	<div class="large-8 large-centered columns">
+	<article>
+		<h1 class="subheader">{{ page.title }}</h1>
+		<time datetime="{{ page.date | date_to_string }}">
+		<small class="subheader">
+		{{ page.date | date_to_string }}
+		</small>
+		</time>
+		<p>{{ page.categories }}</p>
 		{{ content }}
+	</article>
+ </div>
+</div>
