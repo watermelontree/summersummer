@@ -41,6 +41,9 @@ body {
 	background-color: #2ECC71;
 }
 
+.section-three h3{
+	color: #ffffff;	
+}
 
 .desc {
 	position: absolute;
@@ -63,9 +66,8 @@ body {
 }
 
 .logo {
-	width: 35px;
-	height: 40px;
-	margin-left: 10px;
+	width: 43px;
+	margin: 5px 0 0 10px;
 }
 
 .circle {

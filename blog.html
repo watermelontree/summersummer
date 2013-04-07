@@ -6,30 +6,27 @@ title: Blog-SummerSummer
 {% include header.html %}
 
 <div class="row">
-  	<ul class="post-list large-8 large-centered columns">
-    {% for post in site.posts %}  
-      <li class="row">
-        <div class="small-2 columns circle date-list">
-          <ul>
-            <li>
-              {{ post.date | date_to_string }}
-            </li>
-            <li>
-              4
-            </li>
-          </ul>
-        </div>
-        <div class="small-9 columns post-section">
-          <h4>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
-            </a>
-          </h4>
-          {{ post.content | truncate: 300 }}
-        </div>
-      </li>
-    {% endfor %}
-  	</ul>
-	<div class="pagination">
+	<ul class="post-list large-8 large-centered columns">
+  {% for post in site.posts %}  
+    <li class="row">
+      <div class="small-2 columns circle date-list">
+      <dl>
+        <dt>{{ post.date | date_to_string }}</dt>
+        <dd></dd>
+      </dl>
+      </div>
+      <div class="small-9 columns post-section">
+        <h4>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+          </a>
+        </h4>
+        {{ post.content | truncate: 300 }}
+      </div>
+    </li>
+  {% endfor %}
+	</ul>
+  
+	<!-- <div class="pagination large-8 large-centered columns">
 	{% if paginator.previous_page %}  
 	<a href="{{ paginator.previous_page }}" class="previous">Previous</a>
 	{% else %}
@@ -41,5 +38,5 @@ title: Blog-SummerSummer
 	{% else %}
 	<span class="next">Next</span>
 	{% endif %}
-	</div>
+	</div> -->
 </div>
