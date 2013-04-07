@@ -28,7 +28,9 @@ title: Blog-SummerSummer
     </li>
   {% endfor %}
 	</ul>
-
+  {% if page.paginate == true %}
+    {{ paginator | pager_links }}
+  {% endif %}
 	<!-- <div class="pagination large-8 large-centered columns">
 	{% if paginator.previous_page %}  
 	<a href="{{ paginator.previous_page }}" class="previous">Previous</a>
