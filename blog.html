@@ -13,17 +13,16 @@ title: Blog-SummerSummer
     {% capture this_month %}{{ post.date | date: "%b" }}{% endcapture %}
     {% capture this_day %}{{ post.date | date: "%d" }}{% endcapture %}
     <li class="row">
-      <div class="small-2 columns circle">
-        <time class="date-list" datetime="{{ this_postdate }}">
+      <div class="small-2 columns">
+        <time class="date-list circle" datetime="{{ this_postdate }}">
           <div class="day">{{ this_day }}</div>
           <div>{{ this_month }}</div> 
         </time>
       </div>
       <div class="small-10 columns post-section">
-        <a>
-          <h2 href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
-          </a>
-        </h2>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <h2>{{ post.title }}</h2>
+        </a>
         {{ post.content | truncate: 300 }}
       </div>
     </li>
