@@ -15,13 +15,13 @@ title: Blog-SummerSummer
     <li class="row">
       <div class="small-2 columns circle">
         <time class="date-list" datetime="{{ this_postdate }}">
-          <div>{{ this_day }}</div>
+          <div class="day">{{ this_day }}</div>
           <div>{{ this_month }}</div> 
         </time>
       </div>
       <div class="small-10 columns post-section">
         <a>
-          <h href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+          <h2 href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
           </a>
         </h2>
         {{ post.content | truncate: 300 }}
