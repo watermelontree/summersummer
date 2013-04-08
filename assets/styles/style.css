@@ -117,11 +117,28 @@ body {
 	height: 100%;
 }
 
-#avatar {
+#path_menu {
 	position: absolute;
-	top: 48%;
-	left: 48%;
+	top: 35%;
+	/*left: 46%;*/
 	width: 100px;
 	height: 100px;
 	cursor: pointer;
+	opacity: 0;
+}
+
+#avatar {
+	width: 100%;
+	display: block;
+	position: relative;
+	z-index: 3;
+}
+
+.collect {
+	position: relative;
+	z-index: 2;
+}
+
+.collect .item {
+	position: absolute;
 }
