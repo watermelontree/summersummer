@@ -2,6 +2,10 @@ body {
 	font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
 }
 
+img {
+	width: 100%;
+}
+
 /* Index */
 #wrapper {
 	margin-left: auto;
@@ -119,10 +123,7 @@ body {
 
 #path_menu {
 	position: absolute;
-	top: 35%;
-	/*left: 46%;*/
-	width: 100px;
-	height: 100px;
+	top: 40%;
 	cursor: pointer;
 	opacity: 0;
 }
@@ -132,13 +133,47 @@ body {
 	display: block;
 	position: relative;
 	z-index: 3;
+	width: 65px;
+	height: 65px;
 }
 
 .collect {
 	position: relative;
 	z-index: 2;
+	top: -55px;
+	left: -38px;
 }
 
 .collect .item {
+	top: 0;
+	left: 50px;
 	position: absolute;
+	background-color: #E7ECF0;
+	height: 40px;
+	width: 40px;
+	border-radius: 50px;
+	
+}
+
+.path_roll {
+	-webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+		ransition: all .8s ease-in-out;
+}
+
+.rollout {
+	-webkit-transform: rotate(360deg);   
+     -moz-transform: rotate(360deg); 
+      -ms-transform: rotate(360deg); 
+          transform: rotate(360deg);
+    display: block;
+}
+
+.rollin {
+	-webkit-transform: rotate(-360deg);   
+     -moz-transform: rotate(-360deg); 
+      -ms-transform: rotate(-360deg); 
+          transform: rotate(-360deg);
+    display: block;
 }
