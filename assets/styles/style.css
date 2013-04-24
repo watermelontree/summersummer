@@ -178,16 +178,23 @@ img {
     display: block;
 }
 
+
+/* Homework */
 #top{
 	height: 28px;
 	color: #d5d5d5;
 	background-color: #545652;
-	min-width: 950px;
+	max-width: 100%;
+}
+
+.nav li {
+	list-style: none;
 }
 
 #top-2{
 	height: 74px;
 	background: #edf4ed;
+	max-width: 100%;
 }
 
 #top-2-1{
