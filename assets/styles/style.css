@@ -6,6 +6,10 @@ img {
 	width: 100%;
 }
 
+p {
+	line-height: 1.9;
+}
+
 /* Index */
 #wrapper {
 	margin-left: auto;
